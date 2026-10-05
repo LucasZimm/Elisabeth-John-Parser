@@ -15,7 +15,7 @@ name = "openbis-parser-example"
 description = "An example parser for openBIS using the bam-masterdata interface."
 dynamic = ["version"]
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.14"
 authors = [
   { name = "BAM Data Store", email = "datastore@bam.de" },
 ]
@@ -25,6 +25,7 @@ maintainers = [
 license = { file = "LICENSE" }
 dependencies = [
   "bam-masterdata>=0.13.0",
+  "pySPM>=0.6.3",
 ]
 
 [project.urls]
@@ -119,4 +120,4 @@ where = ["src"]
 write_to = "src/openbis_parser_example/_version.py"
 
 [project.entry-points."bam.parsers"]
-openbis_parser_example_entry_point = "openbis_parser_example:openbis_parser_example_entry_point"
+masterdata_parser_tofsims_entry_point = "masterdata_parser_tofsims:masterdata_parser_tofsims_entry_point"
